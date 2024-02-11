@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VarankGO İnovasyon Kampı</title>
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head> 
+
+   <body>
+    <div class="banner">
+      <nav>
+         <a href="index.html"><img src="assets/resources/varanklogo.png"> </a>
+         <div class="nav-links" id="navlinks">
+
+             <i class="fa fa-times-circle" aria-hidden="true" onclick="hideBar()"> </i>         
+             <ul>
+                 
+                
+                     <li><a href="about.html">Hakkımızda</a></li>
+                     <li><a href="https://www.instagram.com/varankgofficial/?hl=en">Sosyal Medya</a></li>
+                     <li><a href="sponsors.html">Sponsorlarımız</a></li>
+                 
+             </ul>
+         </div>
+         <i class="fa fa-bars" aria-hidden="true" onclick="openBar()"></i>
+       </nav>
+      <div class="content">
+         <h1>VarankGO İnovasyon Kampı</h1>
+         <p>VarankGO İnovasyon Kampı’nda katılımcılar ekip oluşturarak kendilerine atanan <br> case sponsorunun
+            vermiş olduğu vaka çalışmasına, etkin ve inovatif fikirler geliştirir. </p>
+         <div>
+            <button type="button" onclick="redirectAbout()" ><span></span>Daha fazla bilgi</button>
+            <script>
+               var navLinks = document.getElementById("navlinks");
+            function openBar()
+            {
+                navLinks.style.right = "0";
+                
+
+            }
+            function hideBar()
+            {
+                navLinks.style.right = "-200px"
+            }
+               function redirectAbout() {
+                   window.location.href = "about.html";
+               }
+               function redirectVarankFL() {
+                   window.location.href = "https://varankfl.com";
+               }
+           </script>
+         </div>
+      </div>
+
+    </div>
+   </body>
+</html>

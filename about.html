@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VarankGO İnovasyon Kampı</title>
+        <link rel="stylesheet" type="text/css" href="assets/about.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+              <nav>
+                <a href="index.html"><img src="assets/resources/varanklogo.png"> </a>
+                <div class="nav-links" id="navlinks">
+
+                    <i class="fa fa-times-circle" aria-hidden="true" onclick="hideBar()"> </i>         
+                    <ul>
+                        <li>
+                            <a href="index.html">Ana sayfa</a>
+                           
+                        </li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" aria-hidden="true" onclick="openBar()"></i>
+              </nav>
+             <div class="text-box">
+                <h1>VarankGO İnovasyon Kampı Hakkında</h1>
+                <p>VarankGO İnovasyon Kampı’nda katılımcılar ekip oluşturarak kendilerine atanan <br> case sponsorunun 
+                    vermiş olduğu vaka çalışmasına, etkin ve inovatif fikirler geliştirir. 3 günün sonunda şirkete <br>sunumlar yapılır
+                    ve her şirket kendi gruplarının en iyi 3 ekibini belirler ve <br> bu
+                    gruplara çeşitli ödüller sunulur.</p>
+                    <button type="button" onclick="redirectAbout()" ><span></span>Yaptığımız etkinliklere göz atın</button>
+             </div> 
+        </section>
+
+
+        <!---sections-->
+        <section class="course">
+            <h1>Hedef Kitlemiz</h1>
+            <p> -> Öncelikle İstanbul genelinde resmi ve özel ortaöğretim kurumlarında öğrenim görmekte olan
+                Hazırlık-9-10-11 ve 12. sınıf öğrencileri <br>
+                -> Casse sponsorları ve genel sponsorlar için iş ve startup ekosisteminde adını duyuran şirketler ve iş
+                adamları</p>
+            <div class="row">
+                <div class="course-color">
+                    <h3>Üniversitelerden Beklediklerimiz</h3>
+                    <p>
+                        -> En az 250 kişinin sığabileceği sınıf ortamları <br>
+                        -> Üniversitenizin konferans salonunuzun kullanım izni <br>
+                        -> Ücret konusunda anlaşılabilmesi durumunda yemekhaneden faydalanmak <br>
+                        -> Etkinlik için gerekli olan masa, sandalye vb. araçlardan zarar vermeyecek şekilde
+                         faydalanmak <br>
+                        -> Etkinlik saatleri esnasında çevreyi rahatsız etmeyecek şekilde müzik açmak <br>
+                    </p>
+                </div>
+                <div class="course-color">
+                    <div class="rounded-box">
+                        <div class="text">
+                            <h4>YouTube Videomuz</h4>
+                            <p4>VarankGO'yu tanıtan YouTube videosu.</p4>
+                        </div>
+                        <div class="video">
+                            <iframe src="https://www.youtube.com/embed/hKjfGpblmfk?si=JGP_ZusaK90juhtT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="course-color">
+                    <h3>Size katabileceklerimiz</h3>
+                    <p>
+                        -> Etkinliğimizin ana hedef kitlesi olan nitelikli öğrencilere okulunuzun fiziksel açıdan tanıtımı <br>
+                        -> Etkinlik zamanında liselilere üniversitenizin bilgilendirilmesi ve pazarlamasını yapmak <br>
+                        -> Üniversitenin bize sağlayacağı ayrıcalıklar sayesinde öğrencilerde olumlu izlenim bırakmak <br>
+                        -> Katılımcılara ve organizasyon ekibine istediğiniz şekilde(konferans olsun, broşürler olsun)
+                        üniversitenizin reklamını yapma imkanı <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="artilar">
+            <h1>Etkinliğin Amacı</h1>
+            <div class="row">
+            <div class="course-color">
+                <p4>
+                    -> Lise çağındaki gençleri iş hayatına hazırlamak,<br>
+                    -> Problem çözme becerilerini ve analitik düşünme becerilerini geliştirmeleri için uygun ortam sağlamak, <br>
+                    -> Ekip çalışmasını geliştirmek<br>
+                    -> Kendilerini ifade edebilecekleri ve iletişim becerilerini geliştirebilecekleri bir ortam ayarlamak <br>
+                </p4>
+            </div>
+            <div class="course-color">
+                <p4>
+                
+                    
+                    -21. yüzyılda iş dünyasında aranan nitelikleri <br> katılımcılara aşılamak ve mesleki hayatlarında karşılaşabilecekleri sorunlara ön hazırlık sağlamak <br>
+                    -Case sponsorlarımıza gençlerin yenilikçi ve meraklı bakış açısı ile inovatif çözümler sağlamak <br>
+                </p4>
+            </div>
+        </div>
+        </section>
+
+        <section class="contactus">
+            <h1>Bizimle iletişime geçin</h1>
+            <input type="text" value="varank.go.it@gmail.com" id="Input">
+            <button2 onclick="copyFunction()">Kopyala</button2>
+        </section>
+        
+
+        <script>
+            var navLinks = document.getElementById("navlinks");
+            function openBar()
+            {
+                navLinks.style.right = "0";
+                
+
+            }
+            function hideBar()
+            {
+                navLinks.style.right = "-200px"
+            }
+            function redirectAbout()
+            {
+                window.location.href = "https://www.instagram.com/varankgofficial/?hl=en";
+            }
+            function copyFunction() {
+         
+             var copyText = document.getElementById("Input");
+
+           
+             copyText.select();
+             copyText.setSelectionRange(0, 99999); 
+
+            
+             navigator.clipboard.writeText(copyText.value);
+
+             
+            alert("Panoya kopyalandı: " + copyText.value);
+} 
+        </script>
+    </body>
+</html>
