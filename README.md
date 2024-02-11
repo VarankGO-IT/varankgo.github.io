@@ -19,3 +19,4 @@ Websitenin test edildiği çözünürlükler:
 - 1600x900
 - 1680x1050
 - 1400x1500
+- 3840x2160
